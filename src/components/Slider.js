@@ -12,6 +12,18 @@ export const Slider = () => {
         const isValidCounter = counter <= 0 ? setCounter(images.length - 1) : setCounter(counter - 1)
         return isValidCounter
     }
+    /*
+     const handleBack = () => {
+    setCounter((prevCounter) => {
+      const newCounter = prevCounter - 1;
+      if (newCounter === -1) {
+        return prevCounter - 4;
+      } else {
+        return newCounter;
+      }
+    });
+  };
+    */
     console.log(images.length - 1)
     return (
         <div>
